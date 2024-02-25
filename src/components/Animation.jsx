@@ -39,6 +39,7 @@ const Animation = ({ setIsComplete }) => {
         { width: "50vw" },
         { duration: 1.2, ease: [0.87, 0, 0.13, 1] }
       );
+
       setIsComplete(true);
     };
     startAnimation();
@@ -48,7 +49,7 @@ const Animation = ({ setIsComplete }) => {
       ref={scope}
       className="relative w-full h-full bg-[#c00e28] flex justify-center items-center"
     >
-      <h1 className="logo text-2xl text-black opacity-0">ARMUR</h1>
+      <h1 className="logo text-black opacity-0">ARMUR</h1>
       <div className="line absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black w-1  z-10" />
       <div className="top absolute top-0 w-full h-[50vh] bg-black" />
       <div className="bottom absolute bottom-0 w-full h-[50vh] bg-black" />

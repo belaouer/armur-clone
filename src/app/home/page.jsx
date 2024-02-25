@@ -2,7 +2,6 @@
 import Navbar from "@/components/Navbar";
 import PageTransition from "@/components/PageTransition";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 import React from "react";
 
@@ -22,9 +21,9 @@ const Home = () => {
           </div>
         </div>
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center ">
-          <motion.div className="relative py-20 w-[80%] h-full">
-            <Image src="/armur.png" objectFit="cover" fill />
-          </motion.div>
+          <div className="relative py-20 w-[80%] h-full">
+            <Image src="/armur.png" objectFit="cover" fill priority />
+          </div>
         </div>
       </section>
     </PageTransition>
